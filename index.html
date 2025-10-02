@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ahmad Hakim Juniar - Telecommunications & IT Support</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Icon Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJzL2sMzT5E/S8zQh/bF/Lw/nEzh7Z5X4I7N9t2Cq5p3G7Lz3tNfJ6FfE5d5pQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Memuat tsParticles untuk background dinamis -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
+    <style>
+        /* Menggunakan font Inter */
+        html {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Styling kustom untuk dark theme dan scrollbar */
+        body {
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+        /* Custom scrollbar style for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2c2c2c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5c5c5c;
+        }
+        /* Utility class untuk animasi */
+        .shadow-glow {
+            box-shadow: 0 0 15px rgba(100, 100, 255, 0.4);
+        }
+        .text-neon {
+            text-shadow: 0 0 5px #a78bfa, 0 0 10px #8b5cf6;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Kontainer tsParticles untuk Background Dinamis -->
+    <div id="tsparticles" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+
+    <!-- Sidebar Kiri (Hanya muncul di layar lebar) -->
+    <div class="hidden lg:fixed lg:bottom-0 lg:left-10 lg:flex lg:flex-col lg:gap-6 lg:items-center lg:z-20">
+        <a href="http://www.linkedin.com/in/ahmad-hakim-juniar-215121290" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors duration-300 p-2 transform hover:scale-110" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/YourGitHubProfile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors duration-300 p-2 transform hover:scale-110" aria-label="GitHub">
+            <i class="fab fa-github text-2xl"></i>
+        </a>
+        <div class="w-px h-24 bg-gray-600"></div>
+    </div>
+
+    <!-- Sidebar Kanan (Hanya muncul di layar lebar) -->
+    <div class="hidden lg:fixed lg:bottom-0 lg:right-10 lg:flex lg:flex-col lg:gap-6 lg:items-center lg:z-20">
+        <a href="mailto:Ahmadhakim540@gmail.com" class="text-gray-400 hover:text-sky-400 transition-colors duration-300 transform rotate-90 tracking-widest text-sm" aria-label="Email">
+            Ahmadhakim540@gmail.com
+        </a>
+        <div class="w-px h-24 bg-gray-600"></div>
+    </div>
+
+    <!-- Konten Utama (Wrapper) -->
+    <div class="relative z-10 p-4 md:p-8 lg:p-12">
+        <div class="max-w-7xl mx-auto space-y-20">
+
+            <!-- Bagian 1: Informasi Pribadi & Ringkasan Profesional -->
+            <section class="mt-8 md:mt-16 lg:mt-24">
+                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end">
+                    <div>
+                        <h1 class="text-6xl md:text-8xl font-extrabold text-sky-400 text-neon leading-tight">Ahmad Hakim Juniar</h1>
+                        <h2 class="text-2xl md:text-3xl font-light text-gray-300 mt-2">Telecommunications Engineering Enthusiast</h2>
+                        <div class="text-gray-400 mt-4 space-y-1 text-sm md:text-base">
+                            <p><i class="fas fa-map-marker-alt mr-2 text-purple-400"></i> Kediri, East Java</p>
+                            <p><i class="fas fa-phone-alt mr-2 text-purple-400"></i> (+62) 87882134094</p>
+                            <p><i class="fas fa-envelope mr-2 text-purple-400"></i> Ahmadhakim540@gmail.com</p>
+                            <p class="lg:hidden"><i class="fab fa-linkedin mr-2 text-purple-400"></i> <a href="http://www.linkedin.com/in/ahmad-hakim-juniar-215121290" target="_blank" class="hover:text-sky-400">LinkedIn Profile</a></p>
+                            <p class="lg:hidden"><i class="fab fa-github mr-2 text-purple-400"></i> <a href="https://github.com/YourGitHubProfile" target="_blank" class="hover:text-sky-400">GitHub Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 p-6 md:p-8 bg-gray-800 rounded-xl shadow-glow">
+                    <h3 class="text-xl font-semibold text-sky-400 mb-4">Ringkasan Profesional</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Mahasiswa Teknik Telekomunikasi tahun ketiga yang antusias dalam memanfaatkan tata kelola telekomunikasi, analisis data jaringan, dan teknologi mutakhir untuk meningkatkan efisiensi sistem dan pengalaman pengguna. Sangat tertarik untuk mengeksplorasi optimasi jaringan, analisis kinerja, dan implementasi solusi inovatif untuk mendorong kemajuan dalam industri telekomunikasi. Bersemangat untuk berkolaborasi dengan tim dinamis yang berdedikasi untuk mengembangkan teknologi komunikasi yang berkelanjutan dan siap masa depan.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bagian 2: Pengalaman Kerja & Magang -->
+            <section id="pengalaman-kerja">
+                <h2 class="text-4xl font-bold text-sky-400 mb-8 border-b border-gray-700 pb-3">Pengalaman Kerja & Magang</h2>
+
+                <!-- Pengalaman Baru: PT Telkom Satelit Indonesia -->
+                <div class="group relative p-6 bg-gray-800/70 hover:bg-gray-700/80 transition-all duration-300 rounded-xl mb-6 flex gap-4">
+                    <!-- Logo Placeholder -->
+                    <div class="flex-shrink-0 w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center border-2 border-sky-400/50">
+                        <span class="text-xl font-bold text-white">TS</span>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-medium text-gray-400">Des 2024 - Sekarang (Contoh)</p>
+                        <h3 class="text-2xl font-semibold text-white mb-1">IT Support & Security Operations Center</h3>
+                        <p class="text-lg font-light text-sky-400 mb-3">PT Telkom Satelit Indonesia (Telkomsat) - Jakarta, Indonesia (Contoh)</p>
+                        <ul class="list-disc ml-5 text-gray-300 space-y-2 text-sm">
+                            <li>Melakukan **monitoring dan analisis insiden** keamanan menggunakan sistem SIEM (Security Information and Event Management).</li>
+                            <li>Memberikan **dukungan teknis IT tingkat 1 dan 2** kepada pengguna internal terkait *hardware*, *software*, dan masalah jaringan.</li>
+                            <li>Mengembangkan dan mengelola **prosedur respons insiden** untuk meminimalkan dampak serangan siber.</li>
+                            <li>Mengelola **patching dan pembaruan sistem** secara berkala untuk menjaga postur keamanan yang kuat.</li>
+                            <li>Berkoordinasi dengan tim keamanan senior untuk **analisis mendalam** terhadap ancaman yang terdeteksi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman Lama: Samsung -->
+                <div class="group relative p-6 bg-gray-800/70 hover:bg-gray-700/80 transition-all duration-300 rounded-xl mb-6 flex gap-4">
+                    <!-- Logo Placeholder -->
+                    <div class="flex-shrink-0 w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center border-2 border-sky-400/50">
+                        <span class="text-xl font-bold text-white">SS</span>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-medium text-gray-400">Jan 2022 - Apr 2024</p>
+                        <h3 class="text-2xl font-semibold text-white mb-1">Promotor</h3>
+                        <p class="text-lg font-light text-sky-400 mb-3">Samsung - Kediri, Indonesia (WFO)</p>
+                        <ul class="list-disc ml-5 text-gray-300 space-y-2 text-sm">
+                            <li>Meningkatkan penjualan produk Samsung melalui strategi pemasaran yang efektif dan keterlibatan pelanggan.</li>
+                            <li>Mendidik pelanggan tentang fitur dan manfaat produk untuk meningkatkan minat beli.</li>
+                            <li>Membangun hubungan yang kuat dengan pelanggan untuk membina loyalitas merek.</li>
+                            <li>Berkoordinasi dengan tim penjualan dan manajemen toko untuk mencapai target penjualan bulanan.</li>
+                            <li>Menghadiri sesi pelatihan produk secara rutin agar tetap *update* dengan teknologi terbaru Samsung.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman Lama: Xiaomi -->
+                <div class="group relative p-6 bg-gray-800/70 hover:bg-gray-700/80 transition-all duration-300 rounded-xl mb-6 flex gap-4">
+                    <!-- Logo Placeholder -->
+                    <div class="flex-shrink-0 w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center border-2 border-sky-400/50">
+                        <span class="text-xl font-bold text-white">XM</span>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-medium text-gray-400">Apr 2021 - Mei 2021</p>
+                        <h3 class="text-2xl font-semibold text-white mb-1">Technical Support Specialist</h3>
+                        <p class="text-lg font-light text-sky-400 mb-3">Xiaomi Exclusive Service Center - Kediri, Indonesia (WFO)</p>
+                        <ul class="list-disc ml-5 text-gray-300 space-y-2 text-sm">
+                            <li>Mendiagnosis dan memperbaiki perangkat Xiaomi dengan akurasi tinggi untuk memastikan kepuasan pelanggan.</li>
+                            <li>Memberikan solusi teknis kepada pelanggan, termasuk *troubleshooting hardware* dan *software*.</li>
+                            <li>Meningkatkan efisiensi layanan dengan mengimplementasikan sistem pelacakan perbaikan yang lebih sistematis.</li>
+                            <li>Berkoordinasi dengan tim pusat untuk menangani kasus garansi dan eskalasi masalah teknis yang kompleks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman Lama: Alien Laptop -->
+                <div class="group relative p-6 bg-gray-800/70 hover:bg-gray-700/80 transition-all duration-300 rounded-xl mb-6 flex gap-4">
+                    <!-- Logo Placeholder -->
+                    <div class="flex-shrink-0 w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center border-2 border-sky-400/50">
+                        <span class="text-xl font-bold text-white">AL</span>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-sm font-medium text-gray-400">Feb 2021 - Mar 2021</p>
+                        <h3 class="text-2xl font-semibold text-white mb-1">Technical Support Specialist</h3>
+                        <p class="text-lg font-light text-sky-400 mb-3">Alien Laptop - Kediri, Indonesia (WFO)</p>
+                        <ul class="list-disc ml-5 text-gray-300 space-y-2 text-sm">
+                            <li>Melakukan *upgrade* dan optimasi sistem untuk meningkatkan kinerja perangkat berdasarkan kebutuhan pelanggan.</li>
+                            <li>Menginstal dan mengkonfigurasi sistem operasi Windows dan *driver* yang diperlukan.</li>
+                            <li>Memberikan konsultasi teknis kepada pelanggan mengenai pemeliharaan dan perbaikan laptop.</li>
+                            <li>Berkoordinasi dengan tim untuk memastikan layanan purna jual yang cepat dan efektif.</li>
+                            <li>Mengelola inventaris suku cadang dan alat perbaikan untuk meningkatkan efisiensi kerja.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Bagian 3: Pengalaman Proyek -->
+            <section id="pengalaman-proyek">
+                <h2 class="text-4xl font-bold text-sky-400 mb-8 border-b border-gray-700 pb-3">Pengalaman Proyek</h2>
+
+                <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Data Proyek akan diisi oleh JavaScript -->
+                </div>
+            </section>
+
+            <!-- Bagian 4: Pendidikan -->
+            <section id="pendidikan">
+                <h2 class="text-4xl font-bold text-sky-400 mb-8 border-b border-gray-700 pb-3">Pendidikan</h2>
+                <div class="p-6 bg-gray-800/70 rounded-xl border-l-4 border-purple-400">
+                    <p class="text-lg font-semibold text-white">Politeknik Negeri Malang - Malang, Indonesia</p>
+                    <p class="text-base font-light text-sky-400">Undergraduate in Digital Telecommunication Network</p>
+                    <p class="text-sm text-gray-400">Aug 2022 - Aug 2026 (Diperkirakan)</p>
+                    <p class="text-sm text-gray-400 mt-2">IPK: 3.2/4.0</p>
+                    <div class="mt-4 text-sm text-gray-300">
+                        <p class="font-medium text-white mb-2">Mata Kuliah Relevan:</p>
+                        <ul class="list-disc ml-5 space-y-1">
+                            <li>Sistem Komunikasi Radio, Pemrosesan Sinyal Digital, Protokol Jaringan.</li>
+                            <li>Komunikasi Nirkabel, Serat Optik, Keamanan Jaringan, Jaringan Komunikasi Seluler.</li>
+                            <li>Internet of Things (IoT), Kecerdasan Buatan (AI), Pemrosesan Sinyal.</li>
+                        </ul>
+                        <p class="mt-3">Aktivitas: Berkompetisi dalam kompetisi menulis ilmiah, Menghadiri pameran teknologi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 5: Keterampilan & Alat -->
+            <section id="keterampilan">
+                <h2 class="text-4xl font-bold text-sky-400 mb-8 border-b border-gray-700 pb-3">Keterampilan & Alat</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Hard Skills -->
+                    <div class="p-6 bg-gray-800/70 rounded-xl">
+                        <h3 class="text-xl font-semibold text-purple-400 mb-4">Keterampilan Teknis (Hard Skills)</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <!-- Tags for Hard Skills -->
+                            <span class="skill-tag">Radio Communication (QGIS, Pathloss, Atoll)</span>
+                            <span class="skill-tag">Network Monitoring (Wireshark)</span>
+                            <span class="skill-tag">Machine Learning (Python, NumPy, YOLO-V8)</span>
+                            <span class="skill-tag">Mobile Application (Java, Android Studio)</span>
+                            <span class="skill-tag">VoIP & PBX Management (SIP Trunking, PC-Based SIP PBX)</span>
+                            <span class="skill-tag">Softphone Configuration (3CX, Zoiper, X Lite)</span>
+                            <span class="skill-tag">IoT Implementation (ESP32, Sensors)</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills & Tools -->
+                    <div class="p-6 bg-gray-800/70 rounded-xl">
+                        <h3 class="text-xl font-semibold text-purple-400 mb-4">Keterampilan Non-Teknis & Alat</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <!-- Tags for Soft Skills -->
+                            <span class="skill-tag-soft">Teamwork</span>
+                            <span class="skill-tag-soft">Communication</span>
+                            <span class="skill-tag-soft">Problem-Solving</span>
+                            <span class="skill-tag-soft">Time Management</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                             <!-- Tags for Tools -->
+                            <span class="tool-tag">Visual Studio Code</span>
+                            <span class="tool-tag">Google Collab</span>
+                            <span class="tool-tag">Oracle VM Virtual Box</span>
+                            <span class="tool-tag">NI Multisim</span>
+                            <span class="tool-tag">Proteus</span>
+                            <span class="tool-tag">Microsoft Office</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <footer class="text-center py-10 text-gray-500 text-sm border-t border-gray-800 mt-16">
+                <p>&copy; 2025 Ahmad Hakim Juniar. Dibangun dengan TailwindCSS & tsParticles.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Modal Lightbox Galeri Proyek -->
+    <div id="lightbox-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full mx-4" onclick="event.stopPropagation()">
+            <!-- Tombol Tutup -->
+            <button class="absolute -top-10 right-0 text-white text-4xl hover:text-red-500 transition-colors" onclick="closeLightbox()">
+                &times;
+            </button>
+
+            <!-- Kontainer Gambar -->
+            <img id="lightbox-image" src="" alt="Galeri Proyek" class="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl">
+
+            <!-- Tombol Navigasi Kiri -->
+            <button id="lightbox-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50 hover:bg-gray-700 p-3 rounded-full text-white text-2xl transition-all ml-2" onclick="navigateGallery(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Tombol Navigasi Kanan -->
+            <button id="lightbox-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800/50 hover:bg-gray-700 p-3 rounded-full text-white text-2xl transition-all mr-2" onclick="navigateGallery(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        // Data proyek, termasuk galeri gambar placeholder
+        const projects = [
+            {
+                title: "Person Detector Menggunakan Metode CNN dengan Modul YOLO-V8",
+                year: "2024",
+                description: "Mengembangkan sistem deteksi orang menggunakan metode Convolutional Neural Network (CNN) dengan modul YOLO-V8 untuk meningkatkan keamanan ruangan. Mengimplementasikan deteksi objek *real-time* dan fitur tangkap otomatis saat terdeteksi kehadiran orang.",
+                points: [
+                    "Mengimplementasikan deteksi objek *real-time* untuk mendeteksi keberadaan manusia secara akurat.",
+                    "Mengintegrasikan fitur tangkap otomatis yang mengambil gambar ketika seseorang terdeteksi.",
+                    "Mengoptimalkan model untuk inferensi yang lebih cepat dan akurasi deteksi yang ditingkatkan.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/1e293b/ffffff?text=YOLOv8+Demo+1",
+                    "https://placehold.co/800x600/0f172a/ffffff?text=YOLOv8+Deteksi+Objek",
+                    "https://placehold.co/800x600/334155/ffffff?text=Laporan+Proyek+CNN"
+                ]
+            },
+            {
+                title: "Konfigurasi dan Implementasi Aplikasi Android dengan Kamera dan Firebase Database",
+                year: "2024",
+                description: "Mengembangkan aplikasi Android yang mengintegrasikan fungsionalitas kamera dan Firebase Database. Mengimplementasikan pengambilan dan penyimpanan gambar *real-time* menggunakan Firebase Storage dan Realtime Database.",
+                points: [
+                    "Mengembangkan aplikasi Android yang mengintegrasikan fungsi kamera dan Firebase.",
+                    "Mengimplementasikan pengambilan dan penyimpanan gambar *real-time* menggunakan Firebase Storage.",
+                    "Mengkonfigurasi Firebase Realtime Database untuk pengelolaan data terstruktur.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/1e3a8a/ffffff?text=Android+UI+Mockup",
+                    "https://placehold.co/800x600/172554/ffffff?text=Firebase+Structure",
+                    "https://placehold.co/800x600/374151/ffffff?text=Kode+Kamera+Android"
+                ]
+            },
+            {
+                title: "Desain Radio Link Menggunakan Software QGIS",
+                year: "2024",
+                description: "Merancang dan menyimulasikan jaringan *radio link* menggunakan software ATOLL. Melakukan analisis *path loss*, pemodelan propagasi sinyal, dan evaluasi *link budget* untuk konektivitas yang optimal.",
+                points: [
+                    "Merancang dan menyimulasikan jaringan *radio link* menggunakan software ATOLL.",
+                    "Melakukan analisis *path loss* dan pemodelan propagasi sinyal.",
+                    "Mengevaluasi *link budget* dan cakupan jaringan untuk memastikan konektivitas optimal.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/065f46/ffffff?text=Peta+QGIS+Desain+Link",
+                    "https://placehold.co/800x600/047857/ffffff?text=Simulasi+ATOLL",
+                    "https://placehold.co/800x600/10b981/ffffff?text=Diagram+Link+Budget"
+                ]
+            },
+            {
+                title: "Sistem Deteksi Berat dan Tinggi Badan Bayi Berbasis IoT untuk Pencegahan Stunting",
+                year: "2023",
+                description: "Mengembangkan sistem berbasis IoT untuk mendeteksi berat dan tinggi bayi guna pencegahan *stunting*. Mengintegrasikan sensor dengan ESP32 untuk pengukuran otomatis, perhitungan BMI, dan akses *real-time* data pertumbuhan.",
+                points: [
+                    "Mengintegrasikan sensor berat dan ultrasonik dengan mikrokontroler ESP32.",
+                    "Mengimplementasikan perhitungan Indeks Massa Tubuh (BMI) Bayi *real-time*.",
+                    "Memungkinkan akses *real-time* bagi profesional kesehatan dan orang tua.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/6d28d9/ffffff?text=Skema+IoT+ESP32",
+                    "https://placehold.co/800x600/7c3aed/ffffff?text=Dashboard+Data+Stunting",
+                    "https://placehold.co/800x600/8b5cf6/ffffff?text=Unit+Prototipe+Sensor"
+                ]
+            },
+             {
+                title: "Interkoneksi Server VoIP dengan PABX dan IPPBX",
+                year: "2024",
+                description: "Mengkonfigurasi dan mengimplementasikan interkoneksi server VoIP dengan sistem PABX dan IPPBX, mengoptimalkan *call routing*, dan melakukan pengujian interoperabilitas.",
+                points: [
+                    "Mengkonfigurasi dan mengimplementasikan interkoneksi server VoIP dengan PABX dan IPPBX.",
+                    "Mengintegrasikan *SIP trunks* untuk komunikasi yang lancar.",
+                    "Mengoptimalkan *call routing* dan *dial plans* untuk manajemen panggilan yang efisien.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/22c55e/ffffff?text=Diagram+VoIP+Topology",
+                    "https://placehold.co/800x600/16a34a/ffffff?text=Konfigurasi+SIP+Trunk",
+                    "https://placehold.co/800x600/059669/ffffff?text=Pengujian+QoS+Suara"
+                ]
+            },
+            {
+                title: "Aplikasi Editor Gambar Sederhana Menggunakan Python dan Tkinter",
+                year: "2023",
+                description: "Mengembangkan aplikasi editor gambar sederhana menggunakan Python dan pustaka Tkinter dan PIL (Pillow). Mengimplementasikan fitur dasar seperti *cropping*, rotasi, dan penyesuaian kecerahan/kontras.",
+                points: [
+                    "Mengimplementasikan fitur dasar seperti *cropping*, rotasi, dan penyesuaian kecerahan/kontras.",
+                    "Mengintegrasikan dukungan untuk memuat dan menyimpan gambar dalam format JPEG.",
+                    "Menggunakan pustaka PIL (Pillow) untuk manipulasi gambar yang efisien.",
+                ],
+                gallery: [
+                    "https://placehold.co/800x600/4c4c4c/ffffff?text=Screenshot+Tkinter+App",
+                    "https://placehold.co/800x600/333333/ffffff?text=Kode+Python+Image+Processing",
+                    "https://placehold.co/800x600/666666/ffffff?text=Demonstrasi+Fitur+Cropping"
+                ]
+            }
+        ];
+
+        // Variabel untuk Lightbox
+        let currentProjectGallery = [];
+        let currentImageIndex = 0;
+
+        /**
+         * Membangun daftar proyek di UI.
+         */
+        function renderProjects() {
+            const container = document.getElementById('project-list');
+            container.innerHTML = '';
+
+            projects.forEach((project, projectIndex) => {
+                const projectHtml = `
+                    <div class="group p-6 bg-gray-800/70 hover:bg-gray-700/80 transition-all duration-300 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1">
+                        <p class="text-sm font-medium text-gray-400 mb-2">${project.year}</p>
+                        <h3 class="text-2xl font-semibold text-white mb-3 group-hover:text-sky-400">${project.title}</h3>
+                        <p class="text-gray-300 mb-4 text-sm">${project.description}</p>
+                        <ul class="list-disc ml-5 text-gray-400 space-y-1 text-xs mb-4">
+                            ${project.points.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                        <!-- Galeri Gambar: Hanya tampilkan gambar utama, tambahkan trigger Lightbox -->
+                        <img
+                            src="${project.gallery[0]}"
+                            alt="Gambar Utama Proyek: ${project.title}"
+                            class="w-full h-40 object-cover rounded-lg mt-3 cursor-pointer border-2 border-gray-700 hover:border-sky-400 transition-colors"
+                            onclick="openLightbox(${projectIndex}, 0)"
+                            onerror="this.onerror=null;this.src='https://placehold.co/400x200/4f46e5/ffffff?text=No+Image+Available'"
+                        >
+                        <p class="text-xs text-center text-gray-500 mt-2">Klik gambar untuk melihat galeri proyek</p>
+                    </div>
+                `;
+                container.innerHTML += projectHtml;
+            });
+        }
+
+        /**
+         * Membuka modal Lightbox.
+         * @param {number} projectIndex - Indeks proyek dari array 'projects'.
+         * @param {number} imageIndex - Indeks gambar yang akan ditampilkan.
+         */
+        function openLightbox(projectIndex, imageIndex) {
+            currentProjectGallery = projects[projectIndex].gallery;
+            currentImageIndex = imageIndex;
+
+            const modal = document.getElementById('lightbox-modal');
+            const image = document.getElementById('lightbox-image');
+
+            image.src = currentProjectGallery[currentImageIndex];
+            modal.classList.remove('hidden');
+
+            // Kontrol tombol navigasi
+            updateLightboxNavigation();
+        }
+
+        /**
+         * Menutup modal Lightbox.
+         */
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        /**
+         * Navigasi ke gambar berikutnya/sebelumnya dalam galeri proyek.
+         * @param {number} direction - -1 untuk sebelumnya, 1 untuk berikutnya.
+         */
+        function navigateGallery(direction) {
+            currentImageIndex += direction;
+
+            if (currentImageIndex < 0) {
+                currentImageIndex = currentProjectGallery.length - 1; // Kembali ke akhir
+            } else if (currentImageIndex >= currentProjectGallery.length) {
+                currentImageIndex = 0; // Kembali ke awal
+            }
+
+            document.getElementById('lightbox-image').src = currentProjectGallery[currentImageIndex];
+            updateLightboxNavigation();
+        }
+
+        /**
+         * Memperbarui status tombol navigasi (hidden/shown).
+         */
+        function updateLightboxNavigation() {
+            const prevButton = document.getElementById('lightbox-prev');
+            const nextButton = document.getElementById('lightbox-next');
+
+            if (currentProjectGallery.length <= 1) {
+                prevButton.classList.add('hidden');
+                nextButton.classList.add('hidden');
+            } else {
+                prevButton.classList.remove('hidden');
+                nextButton.classList.remove('hidden');
+            }
+        }
+
+        /**
+         * Inisialisasi tsParticles (Animasi Background).
+         */
+        function initParticles() {
+            if (typeof tsParticles !== 'undefined') {
+                tsParticles.load({
+                    id: "tsparticles",
+                    options: {
+                        background: {
+                            color: { value: "#1a1a1a" }
+                        },
+                        fpsLimit: 60,
+                        interactivity: {
+                            events: {
+                                onHover: { enable: true, mode: "repulse" },
+                                onClick: { enable: true, mode: "push" },
+                            },
+                            modes: {
+                                repulse: { distance: 100, duration: 0.4 },
+                                push: { quantity: 4 }
+                            }
+                        },
+                        particles: {
+                            color: { value: "#a78bfa" }, // Warna ungu/biru lembut
+                            links: {
+                                color: "#4f46e5", // Warna link yang lebih gelap
+                                distance: 150,
+                                enable: true,
+                                opacity: 0.3,
+                                width: 1
+                            },
+                            move: {
+                                direction: "none",
+                                enable: true,
+                                outModes: { default: "bounce" },
+                                random: false,
+                                speed: 0.5, // Gerakan lambat
+                                straight: false
+                            },
+                            number: {
+                                density: { enable: true, area: 800 },
+                                value: 80 // Jumlah partikel
+                            },
+                            opacity: { value: 0.5 },
+                            shape: { type: "circle" },
+                            size: { value: { min: 1, max: 5 } },
+                        },
+                        detectRetina: true,
+                    },
+                });
+            }
+        }
+
+        // Jalankan inisialisasi setelah DOM dimuat
+        window.onload = () => {
+            initParticles();
+            renderProjects();
+        };
+
+        // Styling untuk skill/tools tags (di luar Tailwind config)
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                tag.classList.add('px-3', 'py-1', 'text-sm', 'font-medium', 'bg-sky-600/20', 'text-sky-300', 'rounded-full', 'border', 'border-sky-500/50', 'hover:bg-sky-500/30', 'transition');
+            });
+            const skillTagsSoft = document.querySelectorAll('.skill-tag-soft');
+            skillTagsSoft.forEach(tag => {
+                tag.classList.add('px-3', 'py-1', 'text-sm', 'font-medium', 'bg-purple-600/20', 'text-purple-300', 'rounded-full', 'border', 'border-purple-500/50', 'hover:bg-purple-500/30', 'transition');
+            });
+            const toolTags = document.querySelectorAll('.tool-tag');
+            toolTags.forEach(tag => {
+                tag.classList.add('px-3', 'py-1', 'text-sm', 'font-medium', 'bg-gray-600/20', 'text-gray-300', 'rounded-full', 'border', 'border-gray-500/50', 'hover:bg-gray-500/30', 'transition');
+            });
+        });
+
+    </script>
+</body>
+</html>
